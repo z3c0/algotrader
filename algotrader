@@ -1,0 +1,4 @@
+#!/bin/bash
+cd "$(dirname $(readlink -f "$0"))"
+source /media/share/z3c0/projects/algotrader/algotrader-env/bin/activate
+python3 /media/share/z3c0/projects/algotrader/simulation.py "$@"
